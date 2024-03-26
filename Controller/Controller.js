@@ -27,6 +27,7 @@ async function login(req,res)
     const body=req.body;
     console.log(body);
     const user=await authModel.findOne({email:body.email});
+    console.log("user",user)
     if(user)
     {
         const compare=await bcrypt.compare(body.password,user.password)
