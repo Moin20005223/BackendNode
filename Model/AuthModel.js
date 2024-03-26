@@ -19,4 +19,4 @@ const registerSchema=mongoose.Schema({
 
 const authModel=mongoose.model("AuthModel",registerSchema);
 
-module.exports=authModel;
+module.exports=authModel
