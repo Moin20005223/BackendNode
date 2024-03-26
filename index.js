@@ -8,9 +8,10 @@ const app=express();
 
 databaseConnect();
 
-app.use(cors({credentials:true,
-// origin:"https://frontend-enjl.onrender.com"
-origin:"https://waterbottlesales.netlify.app"
+app.use(cors({
+    origin:"https://waterbottlesales.netlify.app",
+    credentials:true
+// origin:"http:localhost:3000"
 }));
 
 app.use(express.urlencoded({extended:true}));
