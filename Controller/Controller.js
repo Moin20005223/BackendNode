@@ -25,6 +25,7 @@ async function register(req,res)
 async function login(req,res)
 {
     const body=req.body;
+    console.log(body);
     const user=await authModel.findOne({email:body.email});
     if(user)
     {
