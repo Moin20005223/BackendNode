@@ -10,7 +10,7 @@ databaseConnect();
 
 app.use(cors({credentials:true,
 // origin:"https://frontend-enjl.onrender.com"
-origin:"https://master--waterbottlesales.netlify.app"
+origin:"https://waterbottlesales.netlify.app"
 }));
 
 app.use(express.urlencoded({extended:true}));
